@@ -1,0 +1,106 @@
+<div class="outer">
+    <div class="container">
+        <div>
+            <div class="form-ajouter mb-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="nom">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Prenom</label>
+                        <input type="text" class="form-control" id="Prenom">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Date Naissance</label>
+                        <input type="date" class="form-control" id="dateN">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">CIN</label>
+                        <input type="number" class="form-control" id="dateN">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Ajouter</button>
+                </form>
+            </div>
+            <br><br>
+            <div class="form-search col-md-6">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Rechercher</button>
+                </form>
+
+            </div>
+            <br><br>
+            <div class="tab-utilisateur">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prenom</th>
+                            <th scope="col">Date de Naissance</th>
+                            <th scope="col">Cin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+
+                            <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+                            <td><button type="button" class="btn btn-warning">Modifier</button></td>
+                            <td><button type="button" class="btn btn-info" (click)="openModel()">create Wallet</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Create Wallet</h4>
+                            <button type="button" class="close" (click)="closeModel()">&times;</button>
+
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label">Nom</label>
+                                    <input type="text" class="form-control" id="nom">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Prenom</label>
+                                    <input type="text" class="form-control" id="Prenom">
+                                </div>
+
+                                <br>
+                                <button type="submit" class="btn btn-primary">Ajouter</button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
