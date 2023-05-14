@@ -7,7 +7,7 @@ import { GestionWalletComponent } from './gestion-wallet/gestion-wallet.componen
 
 const routes: Routes = [
   { path: "login", component: AuthentificationComponent },
-  { path: " ", component: AuthentificationComponent },
+  { path: "", component: AuthentificationComponent },
   { path: "dashbord", component: DashbordComponent },
   { path: "gestionSubscriber", component: GestionSubsciberComponent },
   { path: "gestionWallet", component: GestionWalletComponent }
