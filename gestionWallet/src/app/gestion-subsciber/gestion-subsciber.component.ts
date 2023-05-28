@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SubsciberService } from '../services/subsciber.service';
 
 
 @Component({
@@ -6,7 +7,28 @@ import { Component } from '@angular/core';
   templateUrl: './gestion-subsciber.component.html',
   styleUrls: ['./gestion-subsciber.component.css']
 })
+
 export class GestionSubsciberComponent {
+
+
+  subscribers: any;
+
+
+
+  constructor(private subsciberService: SubsciberService) { }
+  ngOnInit(): void {
+
+    this.subsciberService.getAllSubscribers().subscribe((res) => {
+      this.subscribers = res;
+    });
+  }
+
+  deleteSubsciber(s: any) {
+
+    let index = this.subscribers.indexOf(s);
+    this.subscribers.slice(index, 1);
+  }
+
 
   openModel() {
     const modelDiv = document.getElementById("myModal");
@@ -26,6 +48,7 @@ export class GestionSubsciberComponent {
 
     }
   }
+
 
 
 

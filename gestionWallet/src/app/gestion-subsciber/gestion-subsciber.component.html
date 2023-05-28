@@ -44,14 +44,17 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                        <tr *ngFor="let s of subscribers ">
+                            <td>{{s.id}}</td>
+                            <td>{{s.nom}}</td>
+                            <td>{{s.prenom}}</td>
+                            <td>{{s.date_naissance}}</td>
+                            <td>{{s.cin}}</td>
 
-                            <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+
+                            <td><button type="button" class="btn btn-danger"
+                                    (click)="deleteSubsciber(s)">Supprimer</button></td>
+
                             <td><button type="button" class="btn btn-warning">Modifier</button></td>
                             <td><button type="button" class="btn btn-info" (click)="openModel()">Create Wallet</button>
                             </td>
