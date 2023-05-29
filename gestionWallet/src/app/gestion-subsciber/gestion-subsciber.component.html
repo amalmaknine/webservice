@@ -44,7 +44,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let s of subscribers ">
+                        <tr *ngFor="let s of subscriber ">
                             <td>{{s.id}}</td>
                             <td>{{s.nom}}</td>
                             <td>{{s.prenom}}</td>
@@ -90,7 +90,9 @@
                                 </div>
 
                                 <br>
-                                <button type="submit" class="btn btn-primary">Ajouter</button>
+                                <button type="submit" class="btn btn-primary " (click)="goToPageWallet()">
+                                    Ajouter</button>
+
                             </form>
                         </div>
 
@@ -98,11 +100,6 @@
 
                 </div>
             </div>
-
-
-
-
-
 
         </div>
     </div>

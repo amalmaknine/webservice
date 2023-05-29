@@ -1,1 +1,44 @@
-<p>gestion-wallet works!</p>
+<div class="outer">
+    <div class="container">
+        <div>
+            <br><br>
+            <div class="tab-walet">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Numero Wallet</th>
+                            <th scope="col">Balance</th>
+                            <th scope="col">amount</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let w of wallet ">
+                            <td>{{w.id}}</td>
+                            <td>{{w.num}}</td>
+                            <td>{{w.balance}}</td>
+                            <td>{{w.amount}}</td>
+                            <td><button type="button" class="btn btn-danger">Supprimer</button></td>
+
+                            <td><button type="button" class="btn btn-warning">Modifier</button></td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>

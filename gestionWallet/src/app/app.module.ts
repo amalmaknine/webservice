@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashbordComponent } from './dashbord/dashbord.component';
 import { GestionSubsciberComponent } from './gestion-subsciber/gestion-subsciber.component';
 import { GestionWalletComponent } from './gestion-wallet/gestion-wallet.component';
+import { HttpBackend, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GestionWalletComponent } from './gestion-wallet/gestion-wallet.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

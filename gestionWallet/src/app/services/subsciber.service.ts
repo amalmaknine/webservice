@@ -7,9 +7,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class SubsciberService {
 
+  subscriber!: Array<any>
+
   baseUrl = "http://localhost:9092/userService";
 
   constructor(private http: HttpClient) {
+
+
+
   }
 
   getAllSubscribers() {

@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: "dashbord", component: DashbordComponent },
   { path: "gestionSubscriber", component: GestionSubsciberComponent },
   { path: "gestionWallet", component: GestionWalletComponent }
+
 ];
 
 @NgModule({
